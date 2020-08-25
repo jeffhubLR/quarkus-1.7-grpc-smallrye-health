@@ -11,3 +11,15 @@ Calls to the gRPC service succeed:
 But the gRPC healthcheck fails:
 
 `curl http://localhost:8080/health`
+
+```
+{
+    "status": "DOWN",
+    "checks": [
+        {
+            "name": "gRPC Server",
+            "status": "DOWN"
+        }
+    ]
+}
+```
